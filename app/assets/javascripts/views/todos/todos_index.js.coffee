@@ -3,6 +3,7 @@ class SecondTodo.Views.TodosIndex extends Backbone.View
 
   events:
     'submit #new_todo': 'createTodo'
+    'click #clear_finished_todos': 'clearFinishedTodos'
 
   initialize: ->
     @collection.on('reset', @render, this)
@@ -31,3 +32,6 @@ class SecondTodo.Views.TodosIndex extends Backbone.View
   appendTodo: (todo) =>
     view = new SecondTodo.Views.Todo(model: todo)
     @$('#todos').append(view.render().el)
+
+  clearFinishedTodos: ->
+    @collection.destroyFinished()

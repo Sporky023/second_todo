@@ -6,3 +6,5 @@
 </form>
 
 <ul id="todos"></ul>
+
+<span id="clear_finished_todos">clear finished todos</span>
