@@ -1,3 +1,8 @@
 <h1>Todos Index template</h1>
 
-<%= @todos %>
+<form id="new_todo">
+  <input type="text" name="description" id="new_todo_description"/>
+  <input type="submit" valud="Add"/>
+</form>
+
+<ul id="todos"></ul>

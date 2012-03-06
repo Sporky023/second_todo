@@ -1,5 +1,7 @@
 SecondTodo::Application.routes.draw do
-  resources :todos
+  scope "api" do
+    resources :todos
+  end
 
   root to: "main#index"
 end
