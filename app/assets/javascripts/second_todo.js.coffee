@@ -3,7 +3,9 @@ window.SecondTodo =
   Collections: {}
   Views: {}
   Routers: {}
-  init: -> alert 'Hello from Backbone!'
+  init: ->
+    new SecondTodo.Routers.Todos
+    Backbone.history.start()
 
 $(document).ready ->
   SecondTodo.init()
