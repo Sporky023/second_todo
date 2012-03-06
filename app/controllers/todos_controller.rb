@@ -12,4 +12,8 @@ class TodosController < ApplicationController
   def update
     respond_with Todo.update(params[:id], params[:todo])
   end
+
+  def destroy
+    respond_with Todo.destroy(params[:id])
+  end
 end
