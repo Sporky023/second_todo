@@ -1,10 +1,12 @@
 <h1>Luke's Backbone.js Todo App!</h1>
 
 <form id="new_todo">
-  <input type="text" name="description" id="new_todo_description"/>
+  <input type="text" name="description" id="new_todo_description" size="40"/>
   <input type="submit" value="Add"/>
 </form>
 
 <ul id="todos"></ul>
 
 <span id="clear_finished_todos">clear finished todos</span>
+
+<br clear="both" />

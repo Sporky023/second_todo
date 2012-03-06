@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$gw-column: 54px;
+$gw-gutter: 20px;
+
+#todo_list {
+  margin: 50px auto;
+  width: grid-width(6);
+  h1 {
+    font-family: Georgia;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px
+  }
+  form {
+    margin: 0 auto 20px;
+    input[type="text"] {
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      position: relative;
+      top: -3px;
+      @include button;
+    }
+  }
+  #todos {
+    margin: auto;
+    padding: 10px;
+    background-color: #eee;
+    text-align: left;
+    li {
+      padding: 10px;
+      font-family: Helvetica, sans-serif;
+      margin: 10px;
+      background-color: #ddd;
+      list-style-type: none;
+      min-height: 50px;
+      span.clear {
+        @include simple(#ccc);
+        display: block;
+        float: right;
+        padding: 2px;
+      }
+    }
+  }
+  span#clear_finished_todos {
+    margin-top: 10px;
+    @include simple(#ccc);
+    display: block;
+    float: right;
+  }
+}
+
