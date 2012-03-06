@@ -29,6 +29,5 @@ class SecondTodo.Views.TodosIndex extends Backbone.View
         alert "#{attribute} #{message}" for message in messages
 
   appendTodo: (todo) =>
-    console.log('started appendTodo')
     view = new SecondTodo.Views.Todo(model: todo)
     @$('#todos').append(view.render().el)

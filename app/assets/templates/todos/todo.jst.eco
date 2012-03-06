@@ -1,1 +1,7 @@
+<% if @todo.get('finished'): %>
+  <input type="checkbox" checked="checked" />
+<% else: %>
+  <input type="checkbox" />
+<% end %>
+
 <%= @todo.get('description') %>
