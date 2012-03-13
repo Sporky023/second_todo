@@ -1,7 +1,7 @@
 <h1>Luke's Backbone.js Todo App!</h1>
 
 <form id="new_todo">
-  <input type="text" name="description" id="new_todo_description" size="40"/>
+  <input type="text" name="description" id="new_todo_description" size="35"/>
   <input type="submit" value="Add"/>
 </form>
 
